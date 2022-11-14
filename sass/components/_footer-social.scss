@@ -1,0 +1,10 @@
+.soc {
+    &__link--gray {
+        background: rgba(255, 255, 255, 0.1);
+        fill: var(--icon-soc-footer);
+    &:hover,
+    &:focus {
+        background-color: var(--icon-accent-color);
+    }
+    }
+}

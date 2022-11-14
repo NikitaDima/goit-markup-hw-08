@@ -1,0 +1,12 @@
+.soc {
+    &__link--white {
+        background-color: var(--icon-bcg-color);
+        fill: var(--icon-pramery-color);
+        &:hover,
+        &:focus {
+            background-color: var(--icon-accent-color);
+            outline: none;
+            fill: var(--icon-bcg-color);
+        }
+    }
+}
