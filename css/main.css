@@ -402,6 +402,11 @@ img {
   background: #2F303A;
   padding: 60px 0;
 }
+@media screen and (max-width: 1199px) {
+  .footer__section {
+    text-align: center;
+  }
+}
 .footer__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,9 +437,22 @@ img {
     gap: 93px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer__holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 70px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .footer__tumb {
-    text-align: center;
     margin-bottom: 60px;
   }
 }
@@ -466,11 +484,6 @@ img {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-@media screen and (max-width: 1199px) {
-  .footer__title {
-    text-align: center;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer__form {
     display: -webkit-box;
@@ -486,13 +499,32 @@ img {
 }
 .footer__input {
   padding: 14px 16px;
-  width: 358px;
   background-color: var(--bcg-footer);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.25;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .footer__input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__input {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__input {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
+  }
 }
 .footer__button {
   display: -webkit-box;
@@ -523,6 +555,12 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .footer__button {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .footer__button:hover {
   background-color: #188CE8;
@@ -878,39 +916,26 @@ img {
 
 .hero__section {
   background-color: #2F303A;
-  width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img-hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Img-hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Img-hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
+@media (min-device-pixel-ration: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero__section {
-    width: 480px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img-hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img-hero.jpg");
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero__section {
-    width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img-hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img-hero.jpg");
+    background-image: url("../../images/Img-hero@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__section {
-    width: 1200px;
     padding: 200px 0;
-    max-width: 1600px;
     height: 600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Img-hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img-hero.jpg");
   }
 }
 .hero__title {
@@ -1075,6 +1100,7 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  overflow-y: scroll;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

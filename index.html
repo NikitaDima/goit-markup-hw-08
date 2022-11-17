@@ -168,7 +168,22 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/img4.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source 
+                srcset="/images/img4x450.jpg 1x"
+                src="./images/img4x450.jpg"
+                width="450px" 
+                media="(max-width: 767px)">
+                <source
+                srcset="/images/img4x354.jpg 1x"
+                src="./images/img4x354.jpg"
+                width="354px" 
+                media="(max-width: 1199px)">
+              <img 
+              rcset="/images/img4.jpg 1x"
+              src="./images/img4.jpg" 
+              alt="Ігор Дем'яненко" width="270px" />
+            </picture>
               <div class="team__conteiner">
                 <p class="team__text">Ігор Дем'яненко</p>
                 <p lang="en" class="team__desc">Product Designer</p>
@@ -197,7 +212,23 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/img5.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source 
+                srcset="/images/img5x450.jpg 1x"
+                src="./images/img5x450.jpg"
+                width="450px" 
+                media="(max-width: 767px)">
+                <source
+                srcset="/images/img5x354.jpg 1x"
+                src="./images/img5x354.jpg"
+                width="354px" 
+                media="(max-width: 1199px)">
+              <img 
+              srcset="./images/img5.jpg 1x"
+              src="./images/img5.jpg" 
+              alt="Ольга Рєпіна" 
+              width="270px" />
+            </picture>
               <div class="team__conteiner">
                 <p class="team__text">Ольга Рєпіна</p>
                 <p lang="en" class="team__desc">Frontend Developer</p>
@@ -226,7 +257,22 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/img6.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source 
+                srcset="/images/img6x450.jpg 1x"
+                src="./images/img6x450.jpg"
+                width="450px" 
+                media="(max-width: 767px)">
+                <source
+                srcset="/images/img6x354.jpg 1x"
+                src="./images/img6x354.jpg"
+                width="354px" 
+                media="(max-width: 1199px)">
+              <img
+              srcset="./images/img6.jpg 1x" 
+              src="./images/img6.jpg" 
+              alt="Микола Тарасов" width="270px" />
+            </picture>
               <div class="team__conteiner">
                 <p class="team__text">Микола Тарасов</p>
                 <p lang="en" class="team__desc">Marketing</p>
@@ -255,7 +301,22 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/img7.jpg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source 
+                srcset="/images/img7x450.jpg 1x"
+                src="./images/img7x450.jpg"
+                width="450px" 
+                media="(max-width: 767px)">
+                <source
+                srcset="/images/img7x354.jpg 1x"
+                src="./images/img7x354.jpg"
+                width="354px" 
+                media="(max-width: 1199px)">
+              <img 
+              srcset="./images/img7.jpg"
+              src="./images/img7.jpg" 
+              alt="Михайло Єрмаков" width="270px" />
+            </picture>
               <div class="team__conteiner">
                 <p class="team__text">Михайло Єрмаков</p>
                 <p lang="en" class="team__desc">UI Designer</p>
@@ -335,7 +396,7 @@
     <!-- Футер сайту -->
     <footer class="footer__section">
       <div class="conteiner footer__conteiner">
-        
+        <div class="footer__holder">
             <div class="footer__tumb">
               <div class="footer__box">
                 <a href="/" class="footer__logo">
@@ -390,7 +451,7 @@
                   </svg>
                 </a></li>
             </div>
-      
+          </div>
           <div>
             <h2 class="footer__title">Підпишіться на розсилку</h2>
             <form class="footer__form">

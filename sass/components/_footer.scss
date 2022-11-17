@@ -2,6 +2,9 @@
     &__section {
         background: #2F303A;
         padding: 60px 0;
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
     }
     &__conteiner {
         display: flex;
@@ -16,9 +19,16 @@
             gap: 93px;
         }
     }
+    &__holder {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 70px;
+        }
+    }
     &__tumb {
         @media screen and (max-width: 1199px) {
-            text-align: center;
             margin-bottom: 60px;
         }
         
@@ -54,10 +64,7 @@
         text-transform: uppercase;
         color: var(--title-text-color);
 
-        @media screen and (max-width: 1199px) {
-            text-align: center;
-        }
-    }
+            }
     // form foters
     &__form {
         
@@ -72,7 +79,6 @@
     }
     &__input {
         padding: 14px 16px;
-        width: 358px;
         background-color: var(--bcg-footer);
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
@@ -80,6 +86,19 @@
         font-size: 16px;
         line-height: 1.25;
         color: #ffffff;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
     }
     &__button {
         display: flex;
@@ -101,6 +120,12 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (max-width: 1199px) {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
         &:hover {
             background-color: #188CE8;
         }
