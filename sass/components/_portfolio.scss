@@ -3,11 +3,32 @@
     
     &__list {
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 8px;
+        flex-wrap: wrap;
+        
+
+        @media screen and (min-width: 768px) {
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+        @media screen and (max-width: 767px) {
+            margin: -4px;
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
     
-        margin-bottom: 50px;
+    }
+    &__item {
+        @media screen and (max-width: 767px) {
+            
+            margin: 4px;
+        }
     }
     &__btn {
         padding: 6px 22px;
