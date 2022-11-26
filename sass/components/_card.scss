@@ -1,19 +1,37 @@
 .card {
     &__list {
-        margin-right: -30px;
+                
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+        
+        
 
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
     }
     &__item {
-        flex-basis: calc(100%/3 - 30px);
-        background: var(--title-text-color);
-        border: 1px solid #EEEEEE;
-        
         transition-property: box-shadow, transform, opasity;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        background: var(--title-text-color);
+        border: 1px solid #EEEEEE;
+                
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 3 * 30px) /3);
+            
+        }
+                
+    }
+
+    &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+    }
     }
     &__item:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
@@ -55,6 +73,8 @@
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--primary-text-color);
+        margin-bottom: 4px;
+        
     }
     &__text {
         font-size: 16px;
