@@ -79,11 +79,15 @@
             position: relative;
             padding-left: 23px;
             
-            font-size: 14px;
-            line-height: 1.714;
+            font-size: 12px;
+            line-height: 1.1666;
             letter-spacing: 0.03em;
             color: var(--desc-text-color);
             cursor: pointer;
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+                line-height: 1.714;
+            }
         
             user-select: none;
             &::before {
